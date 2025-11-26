@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Apple Garamond Light";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Apple Garamond Light"),
+    url("../assets/fonts/AppleGaramond-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Apple Garamond Bold";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Apple Garamond Bold"),
+    url("../assets/fonts/AppleGaramond-Bold.woff") format("woff");
+}
+
+:root {
+  --ff-serif-light: "Apple Garamond Light";
+  --ff-serif-bold: "Apple Garamond Bold";
+
+  --bg: #fdf6dc;
+}
+
+@theme {
+  --font-serif-light: var(--ff-serif-light);
+  --font-serif-bold: var(--ff-serif-bold);
+
+  --color-bg: var(--bg);
+}
+
+@utility container {
+  @apply mx-auto max-w-2xl px-6 sm:px-0;
+}
+
+body {
+  @apply font-serif-light bg-bg;
+}
+
+main {
+  scrollbar-width: none;
+}
