@@ -21,6 +21,7 @@
 :root {
   --ff-serif-light: "Apple Garamond Light";
   --ff-serif-bold: "Apple Garamond Bold";
+  --ff-sans: "Clash Grotesk", sans-serif;
 
   --bg: #fdf6dc;
 }
@@ -28,6 +29,7 @@
 @theme {
   --font-serif-light: var(--ff-serif-light);
   --font-serif-bold: var(--ff-serif-bold);
+  --font-sans: var(--ff-sans);
 
   --color-bg: var(--bg);
 }
@@ -37,7 +39,7 @@
 }
 
 body {
-  @apply font-serif-light bg-bg;
+  @apply font-sans bg-bg;
 }
 
 main {
